@@ -1,3 +1,3 @@
 python-dotenv
 fake-useragent
--e git+git://github.com/xahgmah/abna.git#egg=abna
+-e git+git://github.com/djc/abna.git#egg=abna
