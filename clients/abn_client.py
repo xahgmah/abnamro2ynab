@@ -1,3 +1,5 @@
+from json import JSONDecodeError
+
 import abna
 import json
 import settings
@@ -39,5 +41,5 @@ class ABNClient:
             with open(self.FILENAME, 'r') as f:
                 data = json.load(f)
                 return data
-        except FileNotFoundError:
+        except (FileNotFoundError, JSONDecodeError):
             return {}
